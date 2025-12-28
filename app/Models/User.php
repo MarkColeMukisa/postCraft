@@ -12,9 +12,9 @@ use Filament\Panel;
 
 class User extends Authenticatable implements FilamentUser
 {
-    public function canAccessPanel(Panel $panel): bool
+   public function canAccessPanel(Panel $panel): bool
     {
-        return true;
+        return str_ends_with($this->email, '@gmail.com') && $this->hasVerifiedEmail();
     }
 
 
