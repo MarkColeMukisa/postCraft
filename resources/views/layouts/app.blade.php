@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'PostCraft') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +21,14 @@
                 <div class="flex justify-between h-16 items-center">
                     <div class="flex-shrink-0">
                         <a href="{{ route('home') }}" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-                            {{ config('app.name', 'Refined Blog') }}
+                            {{ config('app.name', 'PostCraft') }}
                         </a>
                     </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <div class="ml-6 flex space-x-8">
                         <a href="{{ route('filament.admin.auth.login') }}"
                             class="px-4 py-2 bg-amber-500 text-white rounded-md hover:bg-amber-600">
                             Admin Login
                         </a>
-                        <!-- Add more nav items if needed -->
                     </div>
                 </div>
             </nav>
