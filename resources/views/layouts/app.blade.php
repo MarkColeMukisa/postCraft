@@ -25,7 +25,10 @@
                         </a>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-
+                        <a href="{{ route('filament.admin.auth.login') }}"
+                            class="px-4 py-2 bg-amber-500 text-white rounded-md hover:bg-amber-600">
+                            Admin Login
+                        </a>
                         <!-- Add more nav items if needed -->
                     </div>
                 </div>

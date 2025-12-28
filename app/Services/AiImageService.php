@@ -21,7 +21,7 @@ class AiImageService
                 '{$title}'.
 
                 Rules:
-                - No text in the image
+                - Let it have text in the image but professionally styled
                 - Professional blog cover style
             ";
 
